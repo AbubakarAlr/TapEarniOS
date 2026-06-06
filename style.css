@@ -2182,3 +2182,274 @@ footer,
   }
 }
 /* ========================================================= */
+
+
+/* =========================================================
+   TAP EARN PHONE WIDER + READABLE FIX
+   Use this when the mobile version looks too tiny/compressed.
+   It keeps the page compact but makes the first screen wider,
+   clearer, and easier to read on iPhone/iPad.
+   ========================================================= */
+@media(max-width:760px){
+  html{
+    font-size:16px;
+  }
+
+  body{
+    -webkit-text-size-adjust:100%;
+  }
+
+  .navbar,
+  .hero,
+  .stats,
+  .section,
+  .dark-section,
+  .dashboard-section,
+  .cta,
+  footer,
+  .copyright{
+    width:calc(100% - 8px);
+  }
+
+  .navbar{
+    margin:6px auto 8px;
+    padding:10px;
+    border-radius:20px;
+  }
+
+  .logo{
+    justify-content:flex-start;
+    font-size:24px;
+  }
+
+  .logo-icon{
+    width:45px;
+    height:45px;
+  }
+
+  .nav-btn{
+    min-height:44px;
+    padding:0 16px;
+    font-size:13px;
+  }
+
+  .navbar nav{
+    grid-template-columns:repeat(3,1fr);
+    gap:5px;
+  }
+
+  .navbar nav a{
+    font-size:11.5px;
+    padding:10px 6px;
+  }
+
+  .hero{
+    padding:26px 18px;
+    gap:24px;
+    border-radius:24px;
+  }
+
+  .badge{
+    font-size:12px;
+    padding:9px 13px;
+  }
+
+  .hero h1{
+    font-size:clamp(44px,13.8vw,60px);
+    line-height:.94;
+  }
+
+  .hero h2{
+    font-size:clamp(32px,10vw,44px);
+    line-height:1;
+  }
+
+  .hero p{
+    font-size:15px;
+    line-height:1.62;
+    margin-top:17px;
+  }
+
+  .hero-buttons{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:9px;
+  }
+
+  .btn{
+    min-height:51px;
+    font-size:13.5px;
+    padding:0 13px;
+  }
+
+  .checks{
+    grid-template-columns:repeat(3,1fr);
+    gap:7px;
+  }
+
+  .checks span{
+    font-size:11.2px;
+    padding:9px 6px;
+  }
+
+  .phone{
+    width:100%;
+    max-width:380px;
+    padding:18px;
+    border-width:7px;
+  }
+
+  .phone-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px;
+  }
+
+  .phone-header h3{
+    font-size:16px;
+  }
+
+  .phone-header p{
+    font-size:11.5px;
+    margin-top:0;
+  }
+
+  .phone .task-card{
+    grid-template-columns:46px 1fr auto;
+    gap:10px;
+    padding:12px;
+    margin-bottom:10px;
+  }
+
+  .phone .task-icon{
+    width:46px;
+    height:46px;
+    font-size:17px;
+  }
+
+  .task-card h4{
+    font-size:13.5px;
+  }
+
+  .task-card p{
+    font-size:11.2px;
+  }
+
+  .task-card strong{
+    font-size:13px;
+  }
+
+  .stats{
+    grid-template-columns:repeat(2,1fr);
+    gap:8px;
+  }
+
+  .stats div{
+    min-height:92px;
+    padding:16px 12px;
+  }
+
+  .stats h2{
+    font-size:28px;
+  }
+
+  .stats p{
+    font-size:10px;
+  }
+
+  .section{
+    padding:28px 18px;
+    border-radius:24px;
+  }
+
+  .section > h2,
+  .reviews h2,
+  .faq h2,
+  .dark-text h2,
+  .dashboard-text h2,
+  .cta h2{
+    font-size:clamp(32px,9vw,42px);
+  }
+
+  .section-subtitle{
+    font-size:14px;
+    line-height:1.55;
+  }
+
+  .steps,
+  .task-grid,
+  .review-grid,
+  .dark-grid{
+    grid-auto-columns:minmax(265px,88%);
+    gap:12px;
+    padding-bottom:4px;
+  }
+
+  .step-card,
+  .feature-card,
+  .review-card{
+    padding:20px;
+  }
+
+  .step-card h3,
+  .feature-card h3,
+  .review-card h4{
+    font-size:19px;
+  }
+
+  .step-card p,
+  .feature-card p,
+  .review-card p{
+    font-size:13.5px;
+  }
+}
+
+@media(max-width:430px){
+  .navbar{
+    grid-template-columns:1fr;
+  }
+
+  .logo{
+    justify-content:center;
+  }
+
+  .hero-buttons{
+    grid-template-columns:1fr;
+  }
+
+  .checks{
+    grid-template-columns:1fr;
+  }
+
+  .phone{
+    max-width:365px;
+  }
+
+  .stats{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:360px){
+  .hero h1{
+    font-size:39px;
+  }
+
+  .hero h2{
+    font-size:29px;
+  }
+
+  .hero p{
+    font-size:14px;
+  }
+
+  .phone{
+    max-width:340px;
+  }
+
+  .phone .task-card{
+    grid-template-columns:42px 1fr auto;
+  }
+}
+/* ========================================================= */
